@@ -1,3 +1,4 @@
+cargo-features = ["edition2024"]
 [package]
 name = "sol-counter-program"
 version = "0.1.0"
@@ -7,4 +8,5 @@ edition = "2024"
 crate-type = ["cdylib","lib"]
 
 [dependencies]
+borsh = "1.5.7"
 solana-program = "1.18.26"
