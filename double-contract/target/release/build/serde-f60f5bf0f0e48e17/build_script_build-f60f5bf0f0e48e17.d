@@ -1,0 +1,5 @@
+/home/fuyofulo/smart_contracts/double-contract/target/release/build/serde-f60f5bf0f0e48e17/build_script_build-f60f5bf0f0e48e17: /home/fuyofulo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.219/build.rs
+
+/home/fuyofulo/smart_contracts/double-contract/target/release/build/serde-f60f5bf0f0e48e17/build_script_build-f60f5bf0f0e48e17.d: /home/fuyofulo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.219/build.rs
+
+/home/fuyofulo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.219/build.rs:

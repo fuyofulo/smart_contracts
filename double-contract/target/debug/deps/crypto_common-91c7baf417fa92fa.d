@@ -1,0 +1,5 @@
+\\wsl.localhost\Ubuntu\home\fuyofulo\smart_contracts\double-contract\target\debug\deps\libcrypto_common-91c7baf417fa92fa.rmeta: C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\crypto-common-0.1.6\src\lib.rs
+
+\\wsl.localhost\Ubuntu\home\fuyofulo\smart_contracts\double-contract\target\debug\deps\crypto_common-91c7baf417fa92fa.d: C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\crypto-common-0.1.6\src\lib.rs
+
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\crypto-common-0.1.6\src\lib.rs:
