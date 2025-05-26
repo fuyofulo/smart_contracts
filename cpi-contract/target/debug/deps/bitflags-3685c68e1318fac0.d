@@ -1,0 +1,11 @@
+\\wsl.localhost\Ubuntu\home\fuyofulo\smart_contracts\cpi-contract\target\debug\deps\libbitflags-3685c68e1318fac0.rmeta: C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\lib.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\iter.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\parser.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\traits.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\public.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\internal.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\external.rs
+
+\\wsl.localhost\Ubuntu\home\fuyofulo\smart_contracts\cpi-contract\target\debug\deps\bitflags-3685c68e1318fac0.d: C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\lib.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\iter.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\parser.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\traits.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\public.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\internal.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\external.rs
+
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\lib.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\iter.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\parser.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\traits.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\public.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\internal.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\bitflags-2.9.1\src\external.rs:

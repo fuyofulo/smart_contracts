@@ -1,0 +1,12 @@
+\\wsl.localhost\Ubuntu\home\fuyofulo\smart_contracts\cpi-contract\target\debug\deps\libsha2-01d328b9164487ae.rmeta: C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\lib.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\consts.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha256.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha512.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha256\soft.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha256\x86.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha512\soft.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha512\x86.rs
+
+\\wsl.localhost\Ubuntu\home\fuyofulo\smart_contracts\cpi-contract\target\debug\deps\sha2-01d328b9164487ae.d: C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\lib.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\consts.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha256.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha512.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha256\soft.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha256\x86.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha512\soft.rs C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha512\x86.rs
+
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\lib.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\consts.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha256.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha512.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha256\soft.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha256\x86.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha512\soft.rs:
+C:\Users\pheon\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sha2-0.9.9\src\sha512\x86.rs:
