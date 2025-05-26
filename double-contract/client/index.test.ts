@@ -59,6 +59,7 @@ test("one transfer", () => {
 	
 
 	const countData = svm.getAccount(dataAccount.publicKey);
+	console.log(countData);
 
 	expect(countData?.data[0]).toBe(8);
 	expect(countData?.data[1]).toBe(0);
