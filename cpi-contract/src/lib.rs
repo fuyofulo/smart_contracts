@@ -23,7 +23,7 @@ fn process_instruction(
 
     let instruction = Instruction {
         program_id: *double_program_account.key,
-        accounts: vec![AccountMeta::new(*data_account.key, true)],
+        accounts: vec![AccountMeta::new(*data_account.key, false)],
         data: instruction_data.to_vec(),
     };
 
@@ -34,3 +34,7 @@ fn process_instruction(
 
     ProgramResult::Ok(())
 }
+
+
+
+

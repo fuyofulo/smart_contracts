@@ -19,7 +19,7 @@ test("cpi test", async () => {
 
     let ix = new TransactionInstruction({
         keys: [
-            { pubkey: dataAcc.publicKey, isSigner: true, isWritable: true },
+            { pubkey: dataAcc.publicKey, isSigner: false, isWritable: true },
             { pubkey: doubleContract, isSigner: false, isWritable: false }
         ],
         programId: cpiContract,
@@ -30,7 +30,7 @@ test("cpi test", async () => {
     let txn = new Transaction().add(ix);
     txn.recentBlockhash = blockhash;
     txn.feePayer = userAcc.publicKey;
-	txn.sign(userAcc, dataAcc);
+	txn.sign(userAcc);
 
     svm.sendTransaction(txn);
 
@@ -38,10 +38,10 @@ test("cpi test", async () => {
     console.log(dataAccData)
 
 
-	expect(dataAccData?.data[0]).toBe(8);
-    expect(dataAccData?.data[0]).toBe(0);
-    expect(dataAccData?.data[0]).toBe(0);
-    expect(dataAccData?.data[0]).toBe(0);
+	expect(dataAccData?.data[0]).toBe(1);
+    expect(dataAccData?.data[1]).toBe(0);
+    expect(dataAccData?.data[2]).toBe(0);
+    expect(dataAccData?.data[3]).toBe(0);
 
 })
 
