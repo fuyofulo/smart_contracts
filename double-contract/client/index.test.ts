@@ -33,7 +33,6 @@ test("one transfer", () => {
 	console.log(balanceAfter?.toString());
 	expect(balanceAfter).toBe(svm.minimumBalanceForRentExemption(BigInt(4)));
 
-
 	function doubleIt() {
 		const ix2 = [new TransactionInstruction({
 			keys: [
@@ -56,7 +55,6 @@ test("one transfer", () => {
 	doubleIt();
 	doubleIt();
 	doubleIt();
-	
 
 	const countData = svm.getAccount(dataAccount.publicKey);
 	console.log(countData);
