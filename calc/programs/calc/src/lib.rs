@@ -20,6 +20,23 @@ pub mod calc {
         ctx.accounts.account.num = ctx.accounts.account.num + num;
         Ok(())
     }
+
+    pub fn sub(ctx: Context<Sub>, num: u32) -> Result<()> {
+        ctx.accounts.account.num = ctx.accounts.account.num - num;
+        Ok(())
+    }
+
+    pub fn multiply(ctx: Context<Multiply>, num: u32) -> Result<()> {
+        ctx.accounts.account.num = ctx.accounts.account.num * num;
+        Ok(())
+    }
+
+    pub fn half(ctx: Context<Half>) -> Result<()> {
+        ctx.accounts.account.num = ctx.accounts.account.num / 2;
+        Ok(())
+    }
+
+
 }
 
 #[account]
@@ -48,6 +65,30 @@ pub struct Double<'info> {
 pub struct Add<'info> {
     #[account(mut)]
     pub account: Account<'info, DataShape>,  
+    #[account(mut)]
+    pub signer: Signer<'info>
+}
+
+#[derive(Accounts)]
+pub struct Sub<'info> {
+    #[account(mut)] 
+    pub account: Account<'info, DataShape>,
+    #[account(mut)]
+    pub signer: Signer<'info>
+}
+
+#[derive(Accounts)]
+pub struct Half<'info> {
+    #[account(mut)]
+    pub account: Account<'info, DataShape>,
+    #[account(mut)]
+    pub signer: Signer<'info>
+}
+
+#[derive(Accounts)]
+pub struct Multiply<'info> {
+    #[account(mut)]
+    pub account: Account<'info, DataShape>,
     #[account(mut)]
     pub signer: Signer<'info>
 }
