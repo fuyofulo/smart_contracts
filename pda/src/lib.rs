@@ -3,9 +3,10 @@ use solana_program::{
 	entrypoint::ProgramResult,
 	pubkey::Pubkey,
 	entrypoint,
+    msg,
     program_error::ProgramError,
-    system_instruction::create_account,
-    program::invoke_signed
+    program::invoke_signed,
+    system_instruction::create_account
 };
 
 entrypoint!(process_instruction);
@@ -17,8 +18,8 @@ pub fn process_instruction(
 ) -> ProgramResult {
 
     let iter = &mut accounts.iter();
-    let pda = next_account_info(iter)?;
     let user = next_account_info(iter)?;
+    let pda = next_account_info(iter)?;
     let _system_program = next_account_info(iter)?;
 
     let seeds = &[user.key.as_ref(), b"user"];
@@ -35,8 +36,13 @@ pub fn process_instruction(
 
     let _ = invoke_signed(&ix, accounts, &[signer_seeds]);
 
+    msg!("Creating PDA: {}", pda.key);
+    msg!("Expected PDA: {}", pda_public_key);
+
 	Ok(())
 }
+
+
 
 
 
