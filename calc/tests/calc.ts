@@ -17,7 +17,7 @@ describe("calc", () => {
       signer: anchor.getProvider().publicKey,
     }).signers([newAccount]).rpc();
 
-    console.log('your transactiopn signature: ', tx);
+    console.log('your transaction signature: ', tx);
 
   })
 
