@@ -37,13 +37,13 @@ pub fn process_instruction(
 
 	match instruction {
 		Operation::Initialize(val) => {
-			initialize(data_account, val);
+			initialize(data_account, val)?;
 		}
 		Operation::Double => {
-			double(data_account);
+			double(data_account)?;
 		}
 		Operation::Half => {
-			half(data_account);
+			half(data_account)?;
 		}
 	}
 	Ok(())
@@ -51,18 +51,20 @@ pub fn process_instruction(
 
 fn initialize(data_account: &AccountInfo, val: u32) -> ProgramResult {
 	let mut data = Data { value: val };
-	data.serialize(&mut *data_account.data.borrow_mut());
+	data.serialize(&mut *data_account.data.borrow_mut())?;
 	Ok(())
 }
 
 fn double(data_account: &AccountInfo) -> ProgramResult {
-	let mut data = Data::try_from_slice(&data_account.data.borrow_mut());
+	let mut data = Data::try_from_slice(&data_account.data.borrow_mut())?;
 	data.value = data.value * 2;
+	data.serialize(&mut *data_account.data.borrow_mut())?;
 	Ok(())
 }
 
 fn half(data_account: &AccountInfo) -> ProgramResult {
-	let mut data = Data::try_from_slice(&data_account.data.borrow_mut());
+	let mut data = Data::try_from_slice(&data_account.data.borrow_mut())?;
 	data.value = data.value / 2;
+	data.serialize(&mut *data_account.data.borrow_mut())?;
 	Ok(())
 }
