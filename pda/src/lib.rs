@@ -35,10 +35,7 @@ pub fn process_instruction(
     let signer_seeds: &[&[u8]] = &[seeds[0], seeds[1], &[bump]];
 
     let _ = invoke_signed(&ix, accounts, &[signer_seeds]);
-
-    msg!("Creating PDA: {}", pda.key);
-    msg!("Expected PDA: {}", pda_public_key);
-
+    
 	Ok(())
 }
 
