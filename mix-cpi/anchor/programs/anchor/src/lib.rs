@@ -17,7 +17,7 @@ pub mod anchor_cpi {
     pub fn init(ctx: Context<Initialize>, init_value: u32) -> Result<()> {
         
         let accounts = vec![
-            AccountMeta::new(*ctx.accounts.data_account.key, false)
+            AccountMeta::new(ctx.accounts.data_account.key(), false)
         ];
 
         let instruction = anchor_lang::solana_program::instruction::Instruction {
@@ -31,12 +31,12 @@ pub mod anchor_cpi {
             &[ ctx.accounts.data_account.to_account_info() ]
         )?;
 
-        Ok(());
+        Ok(())
     }
 
     pub fn double(ctx: Context<Double>) -> Result<()> {
         let accounts = vec![
-            AccountMeta::new(*ctx.accounts.data_account.key, false)
+            AccountMeta::new(ctx.accounts.data_account.key(), false)
         ];
 
         let instruction = anchor_lang::solana_program::instruction::Instruction {
@@ -45,17 +45,17 @@ pub mod anchor_cpi {
             data: Operation::Double.try_to_vec()?
         };
 
-        anchor_lang::solana_program::invoke(
+        anchor_lang::solana_program::program::invoke(
             &instruction,
             & [ ctx.accounts.data_account.to_account_info() ]
         )?;
 
-        Ok(());
+        Ok(())
     }
 
     pub fn half(ctx: Context<Half>) -> Result<()> {
         let accounts = vec![
-            AccountMeta::new(*ctx.accounts.data_account.key, false)
+            AccountMeta::new(ctx.accounts.data_account.key(), false)
         ];
 
         let instruction = anchor_lang::solana_program::instruction::Instruction {
@@ -64,12 +64,12 @@ pub mod anchor_cpi {
             data: Operation::Half.try_to_vec()?
         };
 
-        anchor_lang::solana_program::invoke(
+        anchor_lang::solana_program::program::invoke(
             &instruction,
             & [ ctx.accounts.data_account.to_account_info() ]
         )?;
 
-        Ok(());
+        Ok(())
     }
 
 
@@ -86,8 +86,9 @@ pub struct Initialize<'info> {
     #[account(init, payer = signer, space = 8 + 4)]
     pub data_account: Account<'info, DataShape>,
     #[account(mut)]
-    pub signer: Account<'info>,
-    pub native_program: Account<'info>,
+    pub signer: Signer<'info>,
+    /// CHECK: CPI to trusted native program, no additional checks required
+    pub native_program: AccountInfo<'info>,
     pub system_program: Program<'info, System>
 }
 
@@ -95,12 +96,14 @@ pub struct Initialize<'info> {
 pub struct Double<'info> {
     #[account(mut)]
     pub data_account: Account<'info, DataShape>,
-    pub native_program: Account<'info>
+    /// CHECK: CPI to trusted native program, no additional checks required
+    pub native_program: AccountInfo<'info>
 }
 
 #[derive(Accounts)]
 pub struct Half<'info> {
     #[account(mut)]
     pub data_account: Account<'info, DataShape>,
-    pub native_program: Account<'info>
+    /// CHECK: CPI to trusted native program, no additional checks required
+    pub native_program: AccountInfo<'info>
 }
