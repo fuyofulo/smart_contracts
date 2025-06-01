@@ -105,3 +105,5 @@ pub struct Half<'info> {
     pub native_program: AccountInfo<'info>,
     pub signer: Signer<'info>,
 }
+
+// this probably needs a lot of analysis

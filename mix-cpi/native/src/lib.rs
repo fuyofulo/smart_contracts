@@ -28,6 +28,7 @@ pub fn process_instruction(
     let mut iter = accounts.iter();
 
     let data_account = next_account_info(&mut iter)?;
+    let user_account = next_account_info(&mut iter)?;
 
     let instruction = Operation::try_from_slice(instruction_data)?;
 
@@ -65,3 +66,5 @@ fn half(data_account: &AccountInfo) -> ProgramResult {
     data.serialize(&mut *data_account.data.borrow_mut())?;
     Ok(())
 }
+
+// need to write tests for this contract
