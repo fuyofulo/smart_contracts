@@ -1,3 +1,5 @@
 hello world!
 
 8/6/2025 -> Writing an article about the solana data model for the solana fellowship. 
+9/6/2025 -> Submitted my aplicaton for superdev.fun solana fellowship
+10//2025 -> Last working day of college
